@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="#" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="button" id="login" name="login" value="Login">
+    </form>
+
+    <div id="error" style="color:red; display:none;">
+        Invalid credentials
+    </div>
+
+    <script>
+        document.getElementById('login').addEventListener('click', function() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Simula un login simple
+            if (username === "valid_user" && password === "valid_pass") {
+                window.location.href = "http://example.com/dashboard"; // Cambia por la URL real
+            } else {
+                document.getElementById('error').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

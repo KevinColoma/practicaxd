@@ -1,0 +1,112 @@
+[
+  {
+    "uri": "features/prueba.feature",
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login functionality",
+    "description": "",
+    "elements": [
+      {
+        "id": "successful-login-with-valid-credentials",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Successful login with valid credentials",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "I am on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 2.281834363937378
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "I enter a valid username and password",
+            "result": {
+              "status": "passed",
+              "duration": 0.4903287887573242
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 6,
+            "name": "I click the login button",
+            "result": {
+              "status": "passed",
+              "duration": 0.8628020286560059
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 7,
+            "name": "I should be redirected to the dashboard",
+            "result": {
+              "status": "failed",
+              "duration": 0.18513989448547363
+            }
+          }
+        ]
+      },
+      {
+        "id": "failed-login-with-invalid-credentials",
+        "line": 9,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Failed login with invalid credentials",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 10,
+            "name": "I am on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 2.2116127014160156
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 11,
+            "name": "I enter an invalid username and password",
+            "result": {
+              "status": "passed",
+              "duration": 0.225264310836792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 12,
+            "name": "I click the login button",
+            "result": {
+              "status": "passed",
+              "duration": 0.19193339347839355
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 13,
+            "name": "I should see an error message",
+            "result": {
+              "status": "passed",
+              "duration": 2.300593376159668
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

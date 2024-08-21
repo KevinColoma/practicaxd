@@ -1,0 +1,98 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #1c6c341b;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilos para el encabezado */
+h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    box-shadow: 0 4px 6px rgba(23, 231, 0, 0.353);
+    color: #333;
+}
+
+/* Estilos para el formulario */
+form {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    transition: all 0.3s ease-in-out;
+}
+
+form:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para los grupos de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Estilos para los campos de entrada */
+input {
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos para el botón de envío */
+button {
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #31ae42cc;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #007428;
+    transform: translateY(0);
+}
+
+/* Estilos para mensajes de error */
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+
